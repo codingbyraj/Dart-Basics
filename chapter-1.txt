@@ -1,14 +1,14 @@
 Dart is an open-source general-purpose programming language. 
 It is originally developed by Google and later approved as a standard by ECMA.
 
-Dart compiler is Dart VM.
+Name of the Dart compiler is Dart VM.
 The Dart SDK includes a utility "dart2js", which is a transpiler that generates JavaScript equivalent of a Dart Script.
 
 Run dart code via the Terminal
 To execute a Dart program via the terminal:
     - Navigate to the path of the current project
     - Type the following command in the Terminal window
-        dart file_name.dart
+        dart <file_name>.dart
 
 
 Enabling Checked Mode
@@ -16,12 +16,12 @@ Dart programs run in two modes:−
     - Checked Mode
     - Production Mode (Default)
     It is recommended to run the Dart VM in checked mode during development and testing, since it helps warnings and errors to 
-    aid development and debugging process. 
+    help development and debugging process. 
     The checked mode enforces various checks like type-checking etc. 
     To turn on the checked mode, add the -c or –-checked option before the script-file name while running the script.
 
     However, to ensure performance benefit while running the script, it is recommended to run the script in the production mode.
-    for example, Test.dart script file −
+    For example, Test.dart script file −
 
  
     void main() { 
@@ -37,7 +37,7 @@ Dart programs run in two modes:−
 
     Now, if we try executing the script with the "- - checked" or the "-c" option −
 
-    dart -c Test.dart or, dart - - checked Test.dart
+    dart -c Test.dart or, dart --checked Test.dart
     The Dart VM will throw an error stating that there is a type mismatch.
 
 
@@ -48,6 +48,7 @@ class TestClass {
       print("Hello World"); 
    } 
 }  
+
 void main() {   
    TestClass c = new TestClass();   
    c.disp();  
